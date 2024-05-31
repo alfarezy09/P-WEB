@@ -53,7 +53,7 @@ include "koneksi.php";
     $ambildata = mysqli_query($koneksi,"select * from barang");
     /* While untuk mengulang*/
     while($tampil = mysqli_fetch_array($ambildata)){
-        $warna = ($no%2==1)?"while":"steelblue";
+        $warna = ($no%2==1)?"skyblue":"aquamarine";
         echo"
         <tr bgcolor='$warna'>
             <td align=center>$no</td>
